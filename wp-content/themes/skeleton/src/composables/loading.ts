@@ -5,7 +5,7 @@ export function useLoading() {
   onMounted(() => {
     const appElement = document.getElementById("app");
     const loadingElement = document.getElementById("loading");
-    useMotion(loadingElement, { initial: { opacity: 1 }, enter: { opacity: 0 } });
+    useMotion(loadingElement, { initial: { opacity: 1 }, enter: { opacity: 0, display: "none" } });
     useMotion(appElement, { initial: { opacity: 0 }, enter: { opacity: 1 } });
   });
 }
