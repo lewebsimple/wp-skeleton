@@ -1,0 +1,24 @@
+{
+  "name": "@lewebsimple/skeleton",
+  "version": "0.1.0",
+  "description": "Skeleton WordPress theme",
+  "author": "Websimple <info@websimple.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "phpcbf . && eslint --fix .",
+    "prepare": "pnpm /^prepare:.*/",
+    "prepare:husky": "cd ../../.. && husky ./wp-content/themes/skeleton/.husky"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.7.3",
+    "eslint": "^9.16.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11"
+  },
+  "lint-staged": {
+    "*.{mjs,ts,vue}": "eslint --fix",
+    "*.php": "bash -c 'phpcbf \"$@\" || [ $? -eq 1 ] && exit 0 || exit $?' --"
+  },
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
+}

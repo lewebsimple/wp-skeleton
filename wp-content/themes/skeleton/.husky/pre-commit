@@ -1,0 +1,2 @@
+cd wp-content/themes/skeleton
+pnpm lint-staged
