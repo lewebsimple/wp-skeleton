@@ -3,5 +3,7 @@
 
 @source "../../**/*.php";
 
+/* App */
+
 /* Vendors */
 @import "./vendors/wordpress.css";
