@@ -38,7 +38,7 @@ function skeleton_assets_register() {
 // Filter script tag for enabling module imports
 add_filter( 'script_loader_tag', 'skeleton_assets_script_loader_tag', 10, 3 );
 function skeleton_assets_script_loader_tag( $tag, $handle, $src ) {
-	if ( in_array( $handle, array( '_vendor', 'main-ts', 'vite-client' ) ) ) {
+	if ( in_array( $handle, array( '_vendor', 'main', 'main-ts', 'vite-client' ) ) ) {
 		return sprintf( '<script type="module" src="%s"></script>', esc_url( remove_query_arg( 'ver', $src ) ) );
 	}
 	return $tag;
