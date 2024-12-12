@@ -34,7 +34,6 @@ export default defineConfig(({ mode }) => ({
   },
   server: {
     host: "0.0.0.0",
-    origin: `https://localhost:3001`,
     port: 3001,
     strictPort: true,
   },

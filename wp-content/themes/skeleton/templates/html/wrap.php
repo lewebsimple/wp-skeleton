@@ -3,7 +3,8 @@
 <?= kaliroots_html_template( 'head' ); ?>
 <body class="<?= join( ' ', get_body_class() ) ?>">
 <?php is_singular() && the_post(); ?>
-<div id="app">
+<div id="loading">Loading...</div>
+<div id="app" style="opacity: 0;">
 	<header>
 		<?= kaliroots_site_template( 'header' ) ?>
 	</header>
