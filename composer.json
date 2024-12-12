@@ -1,0 +1,29 @@
+{
+  "name": "lewebsimple/wp-skeleton",
+  "description": "Skeleton WordPress project",
+  "version": "0.1.0",
+  "type": "project",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://satis.ledevsimple.ca"
+    }
+  ],
+  "prefer-stable": true,
+  "config": {
+    "platform": {
+      "php": "8.2"
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "require": {}
+}
