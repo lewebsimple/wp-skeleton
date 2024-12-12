@@ -6,15 +6,22 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "build": "vite build",
+    "dev": "rm -rf dist/.vite/manifest.json && echo '' > dist/assets/main.js && vite",
     "lint": "phpcbf . && eslint --fix .",
     "prepare": "pnpm /^prepare:.*/",
     "prepare:husky": "cd ../../.. && husky ./wp-content/themes/skeleton/.husky"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.7.3",
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
     "eslint": "^9.16.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11"
+    "lint-staged": "^15.2.11",
+    "vite": "^6.0.3",
+    "vite-plugin-restart": "^0.4.2"
   },
   "lint-staged": {
     "*.{mjs,ts,vue}": "eslint --fix",
