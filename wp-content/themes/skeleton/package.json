@@ -7,14 +7,20 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "rm -rf dist/.vite/manifest.json && echo '' > dist/assets/main.js && vite",
+    "predev": "pnpm /^predev:.*/",
+    "predev:components": "rm -rf components.d.ts",
+    "predev:manifest": "rm -rf dist/.vite/manifest.json",
+    "predev:main": "echo '' > dist/assets/main.js",
+    "dev": "vite",
     "lint": "phpcbf . && eslint --fix .",
     "prepare": "pnpm /^prepare:.*/",
     "prepare:husky": "cd ../../.. && husky ./wp-content/themes/skeleton/.husky"
   },
   "dependencies": {
+    "@nuxt/ui": "3.0.0-alpha.10",
     "@vueuse/motion": "^2.2.6",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.7.3",

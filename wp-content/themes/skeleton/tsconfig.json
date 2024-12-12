@@ -43,5 +43,7 @@
     "src/**/*.d.ts",
     "src/**/*.ts",
     "src/**/*.vue",
+    "auto-imports.d.ts",
+    "components.d.ts"
   ]
 }

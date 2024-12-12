@@ -1,6 +1,7 @@
-html {
-  font-kerning: auto;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  scroll-padding-top: 4rem;
-}
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../**/*.php";
+
+/* Vendors */
+@import "./vendors/wordpress.css";

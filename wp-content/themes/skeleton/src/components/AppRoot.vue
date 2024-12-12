@@ -5,5 +5,7 @@ useLoading();
 </script>
 
 <template>
-  <slot />
+  <UApp>
+    <slot />
+  </UApp>
 </template>
