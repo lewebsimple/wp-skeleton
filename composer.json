@@ -25,5 +25,8 @@
       "composer/installers": true
     }
   },
-  "require": {}
+  "require": {
+    "lewebsimple/kaliroots": "*",
+    "wpackagist-plugin/user-switching": "*"
+  }
 }
