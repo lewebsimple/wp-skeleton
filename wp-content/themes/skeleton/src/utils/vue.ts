@@ -1,12 +1,12 @@
 import { createApp, h, type Plugin } from "vue";
-import AppRoot from "@/components/AppRoot.vue";
+import App from "@/app.vue";
 
 export function createVueApp() {
   const appElement = document.getElementById("app");
   const innerHTML = appElement?.innerHTML || "";
   const app = createApp({
     render() {
-      return h(AppRoot, null, {
+      return h(App, null, {
         default: () => h({ template: innerHTML }),
       });
     },
