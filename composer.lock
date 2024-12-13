@@ -154,20 +154,20 @@
         },
         {
             "name": "lewebsimple/kaliroots",
-            "version": "v0.9.14",
+            "version": "v0.9.15",
             "source": {
                 "type": "git",
                 "url": "ssh://git@gitlab.ledevsimple.ca:222/wp-themes/kaliroots.git",
-                "reference": "1e9559ee3211e9254dbdf448ebd865c14e1f933c"
+                "reference": "bf132902927dfbc17ee53573d3c1edb22c514202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.ledevsimple.ca/dist/lewebsimple/kaliroots/lewebsimple-kaliroots-v0.9.14-b9f085.zip",
-                "reference": "1e9559ee3211e9254dbdf448ebd865c14e1f933c",
-                "shasum": "36f4722a655690a59b18a37bab85a65432889bb4"
+                "url": "https://satis.ledevsimple.ca/dist/lewebsimple/kaliroots/lewebsimple-kaliroots-v0.9.15-6d7d2f.zip",
+                "reference": "bf132902927dfbc17ee53573d3c1edb22c514202",
+                "shasum": "4f961450f889d47d374193b147d2005c2279477a"
             },
             "type": "wordpress-theme",
-            "time": "2024-12-10T19:01:05+00:00"
+            "time": "2024-12-13T13:53:23+00:00"
         },
         {
             "name": "wpackagist-plugin/user-switching",
