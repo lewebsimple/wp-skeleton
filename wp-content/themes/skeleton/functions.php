@@ -3,6 +3,7 @@
 // Administration
 require_once __DIR__ . '/includes/admin/admin-bar.php';
 require_once __DIR__ . '/includes/admin/attachment.php';
+require_once __DIR__ . '/includes/admin/user.php';
 
 // Core
 require_once __DIR__ . '/includes/core/assets.php';
