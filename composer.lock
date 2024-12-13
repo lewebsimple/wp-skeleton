@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b2f45f9e06a67c041835373affb3fc4",
+    "content-hash": "1540ede7c7d96bb398ce1e7221ca1e13",
     "packages": [
         {
             "name": "composer/installers",
@@ -151,6 +151,23 @@
                 }
             ],
             "time": "2024-06-24T20:46:46+00:00"
+        },
+        {
+            "name": "lewebsimple/advanced-custom-fields-pro",
+            "version": "v6.3.11",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@gitlab.ledevsimple.ca:222/wp-plugins/advanced-custom-fields-pro.git",
+                "reference": "4a67623359e88a7cc7e94c37137fe36c9598b9f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.ledevsimple.ca/dist/lewebsimple/advanced-custom-fields-pro/lewebsimple-advanced-custom-fields-pro-v6.3.11-1c9084.zip",
+                "reference": "4a67623359e88a7cc7e94c37137fe36c9598b9f3",
+                "shasum": "e57b2b4fa98831bc66d22110ae02761c19faf12e"
+            },
+            "type": "wordpress-plugin",
+            "time": "2024-11-14T13:15:57+00:00"
         },
         {
             "name": "lewebsimple/kaliroots",

@@ -26,6 +26,7 @@
     }
   },
   "require": {
+    "lewebsimple/advanced-custom-fields-pro": "*",
     "lewebsimple/kaliroots": "*",
     "wpackagist-plugin/safe-svg": "*",
     "wpackagist-plugin/user-switching": "*"
