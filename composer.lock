@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a529c424fbceebe10851eb6a2ffa10f0",
+    "content-hash": "513eabd8731c4dacef90f1486bbc3e5f",
     "packages": [
         {
             "name": "composer/installers",
@@ -177,6 +177,23 @@
                 "source": "https://github.com/DaveARG/zod-php/tree/v1.0.2"
             },
             "time": "2024-10-15T23:51:32+00:00"
+        },
+        {
+            "name": "lewebsimple/acf-extended-pro",
+            "version": "v0.9.0.5",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@gitlab.ledevsimple.ca:222/wp-plugins/acf-extended-pro.git",
+                "reference": "e60bf6a922fcdcacfaef80b92467c9653b183cb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.ledevsimple.ca/dist/lewebsimple/acf-extended-pro/lewebsimple-acf-extended-pro-v0.9.0.5-d221df.zip",
+                "reference": "e60bf6a922fcdcacfaef80b92467c9653b183cb4",
+                "shasum": "494f72e4dd9a236f2b05c7edaab5a8004558ccfc"
+            },
+            "type": "wordpress-plugin",
+            "time": "2024-10-21T12:08:59+00:00"
         },
         {
             "name": "lewebsimple/advanced-custom-fields-pro",

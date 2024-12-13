@@ -27,6 +27,7 @@ require_once __DIR__ . '/includes/schemas/site-options.php';
 // Shortcodes
 
 // Vendors
+require_once __DIR__ . '/includes/vendors/acf-extended.php';
 
 // Widgets
 
