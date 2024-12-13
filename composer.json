@@ -27,9 +27,9 @@
   },
   "require": {
     "dave-arg/zod-php": "*",
-    "lewebsimple/acf-extended-pro": "*",
     "lewebsimple/advanced-custom-fields-pro": "*",
     "lewebsimple/kaliroots": "*",
+    "wpackagist-plugin/acf-extended": "*",
     "wpackagist-plugin/safe-svg": "*",
     "wpackagist-plugin/user-switching": "*"
   }
