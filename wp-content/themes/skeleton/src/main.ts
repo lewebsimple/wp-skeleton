@@ -1,8 +1,10 @@
 import "@/css/main.css";
-import { version } from "../package.json";
-import { createVueApp, loadVuePlugins } from "./utils/vue";
+import "@/utils/error-overlay";
+import { logThemeInfo } from "@/utils/theme-info";
+import { createVueApp, loadVuePlugins } from "@/utils/vue";
 
-console.log(`Skeleton v${version} (${import.meta.env.MODE})`);
+// Log theme name, version and environment
+logThemeInfo();
 
 // Vue.js
 const app = createVueApp();
