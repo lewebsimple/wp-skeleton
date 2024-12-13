@@ -26,6 +26,7 @@
     }
   },
   "require": {
+    "dave-arg/zod-php": "*",
     "lewebsimple/advanced-custom-fields-pro": "*",
     "lewebsimple/kaliroots": "*",
     "wpackagist-plugin/safe-svg": "*",

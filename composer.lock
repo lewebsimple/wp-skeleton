@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1540ede7c7d96bb398ce1e7221ca1e13",
+    "content-hash": "a529c424fbceebe10851eb6a2ffa10f0",
     "packages": [
         {
             "name": "composer/installers",
@@ -151,6 +151,32 @@
                 }
             ],
             "time": "2024-06-24T20:46:46+00:00"
+        },
+        {
+            "name": "dave-arg/zod-php",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DaveARG/zod-php.git",
+                "reference": "ab664ab1c1be4f698ded09de9a2e15ef1922a2ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DaveARG/zod-php/zipball/ab664ab1c1be4f698ded09de9a2e15ef1922a2ab",
+                "reference": "ab664ab1c1be4f698ded09de9a2e15ef1922a2ab",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DaveARG\\Zod\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "source": "https://github.com/DaveARG/zod-php/tree/v1.0.2"
+            },
+            "time": "2024-10-15T23:51:32+00:00"
         },
         {
             "name": "lewebsimple/advanced-custom-fields-pro",
