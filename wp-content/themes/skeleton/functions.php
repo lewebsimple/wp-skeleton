@@ -13,6 +13,7 @@ require_once __DIR__ . '/includes/core/theme-setup.php';
 // Forms
 
 // Roles
+require_once __DIR__ . '/includes/roles/editor.php';
 
 // Sections
 
