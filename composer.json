@@ -27,6 +27,7 @@
   },
   "require": {
     "lewebsimple/kaliroots": "*",
+    "wpackagist-plugin/safe-svg": "*",
     "wpackagist-plugin/user-switching": "*"
   }
 }
