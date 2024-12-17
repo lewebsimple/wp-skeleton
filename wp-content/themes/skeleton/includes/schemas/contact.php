@@ -6,7 +6,7 @@ use DaveARG\Zod\Zod as Z;
 function skeleton_contact_schema() {
 	return Z::object(
 		array(
-			'email' => Z::string()->default( 'tech@lewebsimple.ca' ),
+			'email' => Z::string()->default( get_option( 'admin_email' ) ),
 		)
 	)->default( array() );
 }
