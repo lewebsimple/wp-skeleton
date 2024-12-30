@@ -15,12 +15,12 @@ function skeleton_assets_register() {
 		$main     = $manifest['src/main.ts'];
 		foreach ( $main['imports'] ?? array() as $import ) {
 			$handle = strtok( $import, '.' );
-			wp_register_script( $handle, get_theme_file_uri( 'dist/' . $manifest[ $import ]['file'] ), array(), $version, true );
+			wp_register_script( $handle, get_theme_file_uri( 'dist/' . $manifest[ $import ]['file'] ), array(), null, true );
 			$deps[] = $handle;
 		}
 		wp_register_script( 'main', get_theme_file_uri( 'dist/assets/main.js' ), $deps, $version, true );
 		if ( ! empty( $main['css'] ) ) {
-			wp_register_style( 'main', get_theme_file_uri( 'dist/' . $main['css'][0] ), array(), $version );
+			wp_register_style( 'main', get_theme_file_uri( 'dist/' . $main['css'][0] ), array(), null );
 			add_editor_style( 'dist/' . $main['css'][0] );
 		}
 	} else {
@@ -29,8 +29,8 @@ function skeleton_assets_register() {
 		$host    = $_SERVER['HTTP_HOST'];
 		$prefix  = "https://$host:3001";
 		$deps[]  = 'vite-client';
-		wp_register_script( 'vite-client', "$prefix/@vite/client", array(), $version, true );
-		wp_register_script( 'main-ts', "$prefix/src/main.ts", $deps, $version, true );
+		wp_register_script( 'vite-client', "$prefix/@vite/client", array(), null, true );
+		wp_register_script( 'main-ts', "$prefix/src/main.ts", $deps, null, true );
 		wp_register_script( 'main', get_theme_file_uri( 'dist/assets/main.js' ), array( 'main-ts' ), $version, true );
 	}
 }
@@ -39,7 +39,7 @@ function skeleton_assets_register() {
 add_filter( 'script_loader_tag', 'skeleton_assets_script_loader_tag', 10, 3 );
 function skeleton_assets_script_loader_tag( $tag, $handle, $src ) {
 	if ( in_array( $handle, array( '_vendor', 'main', 'main-ts', 'vite-client' ) ) ) {
-		return sprintf( '<script type="module" src="%s"></script>', esc_url( remove_query_arg( 'ver', $src ) ) );
+		return sprintf( '<script type="module" src="%s"></script>', esc_url( $src ) );
 	}
 	return $tag;
 }

@@ -8,7 +8,9 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
-  ...(mode === "production" && {}),
+  ...(mode === "production" && {
+    base: `/wp-content/themes/${import.meta.dirname.split("/").pop()}/dist/`,
+  }),
   build: {
     emptyOutDir: true,
     manifest: true,

@@ -56,6 +56,7 @@
       <exclude name="WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents"/>
       <exclude name="WordPress.WP.Capabilities.RoleFound"/>
       <exclude name="WordPress.WP.DiscouragedFunctions.wp_reset_query_wp_reset_query"/>
+      <exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
       <exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedScript"/>
       <exclude name="WordPress.WP.GlobalVariablesOverride.Prohibited"/>
       <exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
